@@ -12,3 +12,37 @@ How is the staging area different from the working directory and the respoitory?
 
 The staging area is a temporary area that lets the developer make decisions about the commit prior to committing it -- although I have no idea how to remove files yet -- it exists between the "hard" areas of the working directory and the repository to allow some flexibility between them.
 
+
+
+How can yo use the staging area to make sure you have on commit per logical change?
+
+By using git diff with not paramaters, you can figure out what you have and have not added to the staging area and then commit only what you want to the commit in the repository. 
+
+
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+They help when you want to do something a bit different from the mainstream of the project, like a variation in Italian or an easier version of a game. 
+
+
+
+How do the diagrams help you visualize the branch structure?
+
+Without some big picture, I'd imagine things can get pretty confusing. It is therefore important to keep a good view on the commit branches. 
+
+
+
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+When two branches are merged together they appear in the order they were time stamped. In order to see how a commit changed in relateion to it's parent we need to use "git show". This way we don't compare commits that didn't have anything to do with eachother. 
+It's representd as two branches with arrows pointing all the way back to the parent branch and so on until the beginning of the project. This is how git workds. You can't get from the commits on one branch to the commits on another branch without changing the HEAD and checking out the new branch. 
+
+
+
+What are the pros and cons of Git's aurtomatic merging vs. always doing merges manually?
+
+The main advantage is that you don't have to go through lines and lines of code because Git tells you where the conflicts are. From there you do have to figure out the best solution, git add file and git commit again. The down side is that you still have to figure out what the conflicts are. 
+

@@ -1,6 +1,6 @@
-What happens when you initialize a repository? What do you need to do it?
+Q: What happens when you initialize a repository? What do you need to do it?
 
-Basically a .git file gets added. The steps to do it are as follows:
+A: Basically a .git file gets added. The steps to do it are as follows:
 
 1. cd to the relevant directory e.g. $ cd ~/version-control/reflections
 2. Then enter $ git init -- this initializes the directory
@@ -8,7 +8,10 @@ Basically a .git file gets added. The steps to do it are as follows:
 
 
 
-How is the staging area different from the working directory and the respoitory? What value do yo uthink it offers?
+Q: How is the staging area different from the working directory and the respoitory? 
+What value do you think it offers?
 
-The staging area is a temporary area that lets the developer make decisions about the commit prior to committing it -- although I have no idea how to remove files yet -- it exists between the "hard" areas of the working directory and the repository to allow some flexibility between them.
+A: The staging area is a temporary area that lets the developer make decisions 
+about files prior to committing them. It exists between the "hard" areas of the working directory and the 
+repository and allows some flexibility prior to making decisions.
 
